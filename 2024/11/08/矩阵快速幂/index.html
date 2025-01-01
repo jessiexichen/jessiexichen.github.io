@@ -19,24 +19,21 @@
   <meta name="author" content="">
   <meta name="keywords" content="">
   
-    <meta name="description" content="GPT-SoVITS微调训练 1. 设置batch_size在进行 GPT-SoVITS 微调时，batch_size 的选择非常重要，以下是一些设置建议： 什么是 batch_size？batch_size（批量大小）指的是在一次训练迭代中，模型所处理的训练样本数量。更简单地说，batch_size 就是一次性输入到模型中的数据量。比如，如果 batch_size 设置为 16，那么每次迭代时，">
+    <meta name="description" content="矩阵快速幂是一种基于矩阵的快速幂算法。与普通的快速幂算法类似，它利用分治法对矩阵进行快速乘法运算，从而在对矩阵进行幂运算时减少计算量。矩阵快速幂的核心思想是通过反复平方来加速矩阵的幂计算，特别适用于需要计算矩阵高次幂的场景。 矩阵乘法矩阵乘法是矩阵运算中最基本且最重要的运算之一。在进行矩阵乘法时，要求第一个矩阵的列数（column）和第二个矩阵的行数（row）相同。 假设矩阵 ( A ) 为 (">
 <meta property="og:type" content="article">
-<meta property="og:title" content="GPT-SoVITS微调训练">
-<meta property="og:url" content="http://example.com/2024/11/15/GPT-SoVITS%E5%BE%AE%E8%B0%83%E8%AE%AD%E7%BB%83/index.html">
+<meta property="og:title" content="矩阵快速幂test版">
+<meta property="og:url" content="http://example.com/2024/11/08/%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82/index.html">
 <meta property="og:site_name" content="jessiexichen的小窝">
-<meta property="og:description" content="GPT-SoVITS微调训练 1. 设置batch_size在进行 GPT-SoVITS 微调时，batch_size 的选择非常重要，以下是一些设置建议： 什么是 batch_size？batch_size（批量大小）指的是在一次训练迭代中，模型所处理的训练样本数量。更简单地说，batch_size 就是一次性输入到模型中的数据量。比如，如果 batch_size 设置为 16，那么每次迭代时，">
+<meta property="og:description" content="矩阵快速幂是一种基于矩阵的快速幂算法。与普通的快速幂算法类似，它利用分治法对矩阵进行快速乘法运算，从而在对矩阵进行幂运算时减少计算量。矩阵快速幂的核心思想是通过反复平方来加速矩阵的幂计算，特别适用于需要计算矩阵高次幂的场景。 矩阵乘法矩阵乘法是矩阵运算中最基本且最重要的运算之一。在进行矩阵乘法时，要求第一个矩阵的列数（column）和第二个矩阵的行数（row）相同。 假设矩阵 ( A ) 为 (">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2024/png/42546880/1708129467214-b24b4eb7-30bc-4e27-9d0f-1775ed954663.png">
-<meta property="article:published_time" content="2024-11-15T14:53:23.000Z">
-<meta property="article:modified_time" content="2025-01-01T14:56:15.534Z">
-<meta property="article:tag" content="ai">
-<meta property="article:tag" content="tts">
+<meta property="article:published_time" content="2024-11-07T16:04:43.000Z">
+<meta property="article:modified_time" content="2025-01-01T16:06:01.784Z">
+<meta property="article:tag" content="oi">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2024/png/42546880/1708129467214-b24b4eb7-30bc-4e27-9d0f-1775ed954663.png">
   
   
   
-  <title>GPT-SoVITS微调训练 - jessiexichen的小窝</title>
+  <title>矩阵快速幂test版 - jessiexichen的小窝</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -214,7 +211,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="GPT-SoVITS微调训练"></span>
+            <span id="subtitle" data-typed-text="矩阵快速幂test版"></span>
           
         </div>
 
@@ -225,8 +222,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-11-15 22:53" pubdate>
-          2024年11月15日 晚上
+        <time datetime="2024-11-08 00:04" pubdate>
+          2024年11月8日 凌晨
         </time>
       </span>
     
@@ -237,7 +234,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.9k 字
+          779 字
         
       </span>
     
@@ -248,7 +245,7 @@
         
         
         
-          16 分钟
+          7 分钟
         
       </span>
     
@@ -285,171 +282,72 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">GPT-SoVITS微调训练</h1>
+            <h1 id="seo-header">矩阵快速幂test版</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="GPT-SoVITS微调训练"><a href="#GPT-SoVITS微调训练" class="headerlink" title="GPT-SoVITS微调训练"></a>GPT-SoVITS微调训练</h1><p><img src="https://cdn.nlark.com/yuque/0/2024/png/42546880/1708129467214-b24b4eb7-30bc-4e27-9d0f-1775ed954663.png" srcset="/img/loading.gif" lazyload alt="webUI微调界面"></p>
-<h2 id="1-设置batch-size"><a href="#1-设置batch-size" class="headerlink" title="1. 设置batch_size"></a>1. 设置<code>batch_size</code></h2><p>在进行 GPT-SoVITS 微调时，<code>batch_size</code> 的选择非常重要，以下是一些设置建议：</p>
-<h3 id="什么是-batch-size？"><a href="#什么是-batch-size？" class="headerlink" title="什么是 batch_size？"></a>什么是 <code>batch_size</code>？</h3><p><code>batch_size</code>（批量大小）指的是在一次训练迭代中，模型所处理的训练样本数量。更简单地说，<code>batch_size</code> 就是一次性输入到模型中的数据量。比如，如果 <code>batch_size</code> 设置为 16，那么每次迭代时，模型就会从数据集中选择 16 个样本进行训练。较大的 <code>batch_size</code> 会让每次迭代计算更多数据，但会占用更多的显存。</p>
-<h3 id="设置建议："><a href="#设置建议：" class="headerlink" title="设置建议："></a>设置建议：</h3><ul>
-<li><p><strong>显存限制</strong>：<code>batch_size</code> 不应设置过高，通常建议将其设置为显存的一半以下。如果 <code>batch_size</code> 设置过大，可能会导致显存爆满，甚至无法训练。显存过载时，训练过程会变慢，因为显卡可能会开始使用系统内存。</p>
-</li>
-<li><p><strong>效率与性能</strong>：<code>batch_size</code> 的选择并不是越大越好。虽然较大的 <code>batch_size</code> 可以在每次迭代中处理更多数据，从而提高训练效率，但也会增加显存占用，导致显卡的 3D 占用率增加，使用共享显存，从而减慢训练速度。</p>
-</li>
-<li><p><strong>根据数据集调整</strong>：根据数据集的大小调整 <code>batch_size</code>。例如，在显存为 6GB 的显卡上，推荐将 <code>batch_size</code> 设置为 1。笔者的12GB显存显卡上，将 <code>batch_size</code> 设置为 5。将如果数据集更大或者切片长度更长时，应适当减小 <code>batch_size</code>。</p>
-</li>
-<li><p><strong>实际设置</strong>：在切片长度为 10 秒的情况下，以下是不同显存下的最大 <code>batch_size</code>：</p>
-<ul>
-<li><h3 id="查看显存使用情况"><a href="#查看显存使用情况" class="headerlink" title="查看显存使用情况"></a>查看显存使用情况</h3></li>
-</ul>
-</li>
-</ul>
-<p>在windows 和 linux命令行中查看显存使用情况，可以使用 <code>nvidia-smi</code> 命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">nvidia-smi<br></code></pre></td></tr></table></figure>
-
-<table>
-<thead>
-<tr>
-<th>显存大小</th>
-<th>最大 <code>batch_size</code></th>
-</tr>
-</thead>
-<tbody><tr>
-<td>6GB</td>
-<td>1</td>
-</tr>
-<tr>
-<td>8GB</td>
-<td>2</td>
-</tr>
-<tr>
-<td>16GB</td>
-<td>8</td>
-</tr>
-</tbody></table>
-<p>  如果切片长度更长或数据集更大，建议适当减少 <code>batch_size</code>。</p>
-<h2 id="2-是否使用-DPO-训练"><a href="#2-是否使用-DPO-训练" class="headerlink" title="2. 是否使用 DPO 训练"></a>2. 是否使用 DPO 训练</h2><p>DPO（<strong>Differentiable Prompt Optimization</strong>）训练方法是 GPT-SoVITS 在0213版本之后添加的一种新方法。通过使提示（prompt）能够进行微分，DPO可以在训练过程中自动优化提示，从而显著提高模型的生成效果。它能够减少“吞字”和“复读”现象，并且使得模型可以处理更多字数的文本。然而，DPO训练也有一些挑战，特别是在显存占用和训练速度方面。</p>
-<h3 id="什么是“微分”？"><a href="#什么是“微分”？" class="headerlink" title="什么是“微分”？"></a>什么是“微分”？</h3><p>在机器学习和神经网络中，微分（differentiation）通常是指计算损失函数（loss function）对模型参数的梯度。通过这个梯度信息，可以指导模型参数如何调整，以最小化损失函数，从而提高模型的性能。</p>
-<h3 id="使提示能够进行微分"><a href="#使提示能够进行微分" class="headerlink" title="使提示能够进行微分"></a>使提示能够进行微分</h3><p>传统上，提示（prompt）是固定的、手动设计的文本，不会在训练过程中进行调整。而在 DPO 方法中，提示被视为可以优化的参数，也就是说，通过训练的过程，我们可以调整这些提示的内容，使得模型的表现更加优秀。这意味着提示本身是“可微的”，也可以像神经网络的权重一样通过梯度下降来进行优化。</p>
-<p>具体来说，使提示可微分的过程可能涉及以下几个步骤：</p>
+                <p>矩阵快速幂是一种基于矩阵的快速幂算法。与普通的快速幂算法类似，它利用分治法对矩阵进行快速乘法运算，从而在对矩阵进行幂运算时减少计算量。矩阵快速幂的核心思想是通过反复平方来加速矩阵的幂计算，特别适用于需要计算矩阵高次幂的场景。</p>
+<h2 id="矩阵乘法"><a href="#矩阵乘法" class="headerlink" title="矩阵乘法"></a>矩阵乘法</h2><p>矩阵乘法是矩阵运算中最基本且最重要的运算之一。在进行矩阵乘法时，要求第一个矩阵的列数（column）和第二个矩阵的行数（row）相同。</p>
+<p>假设矩阵 ( A ) 为 ( m \times p ) 的矩阵，矩阵 ( B ) 为 ( p \times n ) 的矩阵，那么它们的乘积矩阵 ( C ) 为 ( m \times n ) 的矩阵，其中矩阵 ( C ) 的每个元素 ( C_{ij} ) 是矩阵 ( A ) 的第 ( i ) 行和矩阵 ( B ) 的第 ( j ) 列的点积。具体公式如下：</p>
+<p>[<br>C_{ij} &#x3D; \sum_{k&#x3D;1}^{p} A_{ik} \cdot B_{kj}<br>]</p>
+<p>这意味着要计算矩阵 ( C ) 中的元素 ( C_{ij} )，需要枚举矩阵 ( A ) 的行和矩阵 ( B ) 的列。为了确保矩阵乘法合法，必须满足矩阵 ( A ) 的列数等于矩阵 ( B ) 的行数。</p>
+<h2 id="矩阵快速幂算法"><a href="#矩阵快速幂算法" class="headerlink" title="矩阵快速幂算法"></a>矩阵快速幂算法</h2><p>矩阵快速幂的思想与普通快速幂相似，即利用分治法将幂次拆分为小的部分进行计算。在矩阵快速幂中，我们对矩阵进行连续平方，从而减少乘法次数，快速得到矩阵的高次幂。</p>
+<p>矩阵快速幂的算法流程可以分为以下几个步骤：</p>
 <ol>
-<li><p><strong>将提示视为可训练的参数</strong>：<br>在模型训练时，提示不仅是一个固定的文本，而是一个可优化的对象。我们可以用一个变量表示提示内容，并通过梯度下降法来优化这个变量。</p>
+<li><p><strong>初始化矩阵</strong>：<br>创建一个单位矩阵 <code>res</code>，这是因为任何矩阵与单位矩阵相乘，都会得到原矩阵。</p>
 </li>
-<li><p><strong>计算提示的梯度</strong>：<br>通过计算模型生成结果和真实目标之间的损失函数（例如，生成文本与实际文本的差异），然后对提示内容计算梯度。这个梯度表示了如何调整提示的内容，以使模型输出更加接近预期。</p>
+<li><p><strong>循环迭代</strong>：<br>对矩阵 ( a ) 进行快速幂计算，逐次平方矩阵并乘以当前的 <code>res</code>，直到幂指数为零。</p>
 </li>
-<li><p><strong>反向传播优化提示</strong>：<br>通过反向传播，利用损失函数的梯度信息来更新提示内容，使其能够更好地引导模型生成高质量的文本。</p>
+<li><p><strong>奇偶判断</strong>：<br>每次计算时，判断当前幂指数是奇数还是偶数。如果是奇数，先将当前矩阵乘到 <code>res</code> 上，然后将矩阵平方；如果是偶数，直接将矩阵平方。</p>
 </li>
 </ol>
-<h3 id="举个简单的例子："><a href="#举个简单的例子：" class="headerlink" title="举个简单的例子："></a>举个简单的例子：</h3><p>假设我们正在训练一个生成诗歌的模型，我们给定一个初始提示：”写一首关于秋天的诗”，但希望优化这个提示，以便模型生成的诗歌更加优美。传统的做法是手动修改提示，比如修改为：”写一首描述秋天景色的诗”，但是在 DPO 中，我们可以通过训练自动优化这个提示。</p>
-<ul>
-<li><strong>初始提示</strong>： “写一首关于秋天的诗”。</li>
-<li><strong>模型生成的诗歌</strong>： 秋天的树叶掉落，秋天的风很凉。</li>
-<li><strong>计算损失</strong>：通过计算这个生成文本与目标文本（例如：一首优美的秋天诗）之间的差异，我们可以计算损失。</li>
-<li><strong>DPO优化后的提示</strong>： DPO 通过反向传播调整提示，使其变成：”写一首生动描绘秋天景色和情感的诗”。</li>
-<li><strong>新的模型输出</strong>： 新的提示引导模型生成更符合目标的诗歌。</li>
-</ul>
-<h3 id="DPO训练的优缺点："><a href="#DPO训练的优缺点：" class="headerlink" title="DPO训练的优缺点："></a>DPO训练的优缺点：</h3><h4 id="优点："><a href="#优点：" class="headerlink" title="优点："></a>优点：</h4><ul>
-<li><strong>效果提升</strong>：通过优化提示，DPO能够显著改善生成文本的质量，减少吞字和复读问题，提高生成文本的连贯性和准确性。</li>
-<li><strong>推理能力增强</strong>：DPO训练能够使模型处理更多的字数，在推理时生成更长的文本。</li>
-</ul>
-<h4 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h4><ul>
-<li><strong>显存需求增加</strong>：DPO训练需要更多的显存，通常显存占用会是传统训练方法的两倍以上，因此需要至少12GB显存的显卡。</li>
-<li><strong>训练速度变慢</strong>：DPO训练比传统方法慢约4倍，需要更长的训练时间。</li>
-<li><strong>数据集质量要求高</strong>：DPO对数据集的质量要求较高，数据集中的杂音、混响或标注错误会导致模型效果下降，甚至可能产生负面影响。</li>
-</ul>
-<h3 id="是否开启DPO训练："><a href="#是否开启DPO训练：" class="headerlink" title="是否开启DPO训练："></a>是否开启DPO训练：</h3><ul>
-<li><p><strong>开启DPO训练的条件</strong>：</p>
-<ul>
-<li>显卡显存大于12GB。</li>
-<li>训练数据集质量较好（无杂音，标注准确）。</li>
-<li>能够接受较长的训练时间。</li>
-</ul>
-</li>
-<li><p><strong>不推荐开启DPO训练的情况</strong>：</p>
-<ul>
-<li>显卡显存小于12GB。</li>
-<li>数据集质量不理想（例如，音质差或标注不准确）。</li>
-<li>希望快速完成训练任务。</li>
-</ul>
-</li>
-</ul>
-<h3 id="显存与-batch-size-配置表"><a href="#显存与-batch-size-配置表" class="headerlink" title="显存与 batch_size 配置表"></a>显存与 <code>batch_size</code> 配置表</h3><table>
-<thead>
-<tr>
-<th>显存</th>
-<th>未开启 DPO <code>batch_size</code></th>
-<th>开启 DPO <code>batch_size</code></th>
-<th>切片长度</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>6GB</td>
-<td>1</td>
-<td>无法训练</td>
-<td>10s</td>
-</tr>
-<tr>
-<td>8GB</td>
-<td>2</td>
-<td>无法训练</td>
-<td>10s</td>
-</tr>
-<tr>
-<td>12GB</td>
-<td>4</td>
-<td>1</td>
-<td>10s</td>
-</tr>
-<tr>
-<td>16GB</td>
-<td>7</td>
-<td>1</td>
-<td>10s</td>
-</tr>
-<tr>
-<td>22GB</td>
-<td>10</td>
-<td>4</td>
-<td>10s</td>
-</tr>
-<tr>
-<td>24GB</td>
-<td>11</td>
-<td>6</td>
-<td>10s</td>
-</tr>
-<tr>
-<td>32GB</td>
-<td>16</td>
-<td>6</td>
-<td>10s</td>
-</tr>
-<tr>
-<td>40GB</td>
-<td>21</td>
-<td>8</td>
-<td>10s</td>
-</tr>
-<tr>
-<td>80GB</td>
-<td>44</td>
-<td>18</td>
-<td>10s</td>
-</tr>
-</tbody></table>
-<h2 id="3-设置轮数"><a href="#3-设置轮数" class="headerlink" title="3.设置轮数"></a>3.设置轮数</h2><p>在机器学习和神经网络中，<code>轮数（Epoch）</code>是指整个训练数据集通过模型一次的过程。每一轮（epoch）中，模型会使用训练数据集中的所有样本进行一次前向传播和反向传播的过程，更新模型的权重。</p>
-<h3 id="轮数的作用"><a href="#轮数的作用" class="headerlink" title="轮数的作用"></a>轮数的作用</h3><ul>
-<li>训练不够：如果轮数过少，模型可能没有足够的时间去学习数据中的模式，导致欠拟合。</li>
-<li>过度训练：如果轮数过多，模型可能会过度拟合训练数据，导致泛化能力下降。</li>
-</ul>
-<h3 id="选择适当的轮数："><a href="#选择适当的轮数：" class="headerlink" title="选择适当的轮数："></a>选择适当的轮数：</h3><p>通常在训练过程中，通过监控验证集的性能来选择适当的轮数。如果训练损失持续减少，但验证损失开始上升，可能就到了过拟合的临界点，此时应停止。</p>
-<ul>
-<li>当底噪、混响、喷麦、响度不统一、电流声、口水音、口齿不清、音质差等情况那么请不要调高SoVITS模型轮数，否则会有负面效果。</li>
-<li>GPT-SoVITS模型轮数一般情况下不高于20，建议设置10。</li>
-</ul>
-<h2 id="4-开始训练"><a href="#4-开始训练" class="headerlink" title="4.开始训练"></a>4.开始训练</h2>
+<p>以下是矩阵快速幂的代码实现：</p>
+<pre><code class="cpp">// 定义矩阵结构体
+struct Matrix &#123;
+    int mat[MAX][MAX];  // 矩阵的元素
+    int m, n;           // 矩阵的行数和列数
+&#125;;
+
+// 矩阵乘法运算符重载
+Matrix operator*(const Matrix&amp; a, const Matrix&amp; b) &#123;
+    Matrix c;
+    // 初始化结果矩阵c
+    for (int i = 0; i &lt; a.m; i++) &#123;
+        for (int j = 0; j &lt; b.n; j++) &#123;
+            c.mat[i][j] = 0;
+            for (int k = 0; k &lt; a.n; k++) &#123;
+                c.mat[i][j] = (c.mat[i][j] + a.mat[i][k] * b.mat[k][j]) % mod;
+            &#125;
+        &#125;
+    &#125;
+    return c; // 返回乘积矩阵
+&#125;
+
+// 矩阵快速幂运算符重载
+Matrix operator^(Matrix a, long long b) &#123;
+    Matrix res, tmp;
+    tmp = a;  // tmp初始为a
+
+    // 初始化单位矩阵res
+    for (int i = 0; i &lt; a.m; i++) &#123;
+        for (int j = 0; j &lt; a.m; j++) &#123;
+            if (i == j) res.mat[i][j] = 1; // 单位矩阵
+            else res.mat[i][j] = 0;
+        &#125;
+    &#125;
+
+    // 快速幂计算
+    while (b &gt; 0) &#123;
+        if (b &amp; 1) res = res * tmp; // 如果当前位为1，乘上当前矩阵
+        tmp = tmp * tmp; // tmp平方
+        b /= 2; // 右移一位
+    &#125;
+
+    return res; // 返回矩阵的最终结果
+&#125;
+</code></pre>
+
                 
               </div>
             
@@ -461,9 +359,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/ai/" class="print-no-link">#ai</a>
-      
-        <a href="/tags/tts/" class="print-no-link">#tts</a>
+        <a href="/tags/oi/" class="print-no-link">#oi</a>
       
     </div>
   
@@ -475,15 +371,15 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>GPT-SoVITS微调训练</div>
-      <div>http://example.com/2024/11/15/GPT-SoVITS微调训练/</div>
+      <div>矩阵快速幂test版</div>
+      <div>http://example.com/2024/11/08/矩阵快速幂/</div>
     </div>
     <div class="license-meta">
       
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024年11月15日</div>
+          <div>2024年11月8日</div>
         </div>
       
       
@@ -515,12 +411,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/2024/11/15/GPT-SoVITS%E5%BE%AE%E8%B0%83%E8%AE%AD%E7%BB%83/" title="GPT-SoVITS微调训练">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">GPT-SoVITS微调训练</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2024/11/08/%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82/" title="矩阵快速幂test版">
-                        <span class="hidden-mobile">矩阵快速幂test版</span>
+                      <a href="/2024/10/25/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/" title="最小生成树">
+                        <span class="hidden-mobile">最小生成树</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
