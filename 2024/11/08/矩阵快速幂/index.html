@@ -19,15 +19,15 @@
   <meta name="author" content="">
   <meta name="keywords" content="">
   
-    <meta name="description" content="矩阵快速幂是一种基于矩阵的快速幂算法。与普通的快速幂算法类似，它利用分治法对矩阵进行快速乘法运算，从而在对矩阵进行幂运算时减少计算量。矩阵快速幂的核心思想是通过反复平方来加速矩阵的幂计算，特别适用于需要计算矩阵高次幂的场景。 矩阵乘法矩阵乘法是矩阵运算中最基本且最重要的运算之一。在进行矩阵乘法时，要求第一个矩阵的列数（column）和第二个矩阵的行数（row）相同。 假设矩阵 ( A ) 为 (">
+    <meta name="description" content="\[ E&#x3D;mc^2 \] 矩阵快速幂是一种基于矩阵的快速幂算法。与普通的快速幂算法类似，它利用分治法对矩阵进行快速乘法运算，从而在对矩阵进行幂运算时减少计算量。矩阵快速幂的核心思想是通过反复平方来加速矩阵的幂计算，特别适用于需要计算矩阵高次幂的场景。 矩阵乘法 矩阵乘法是矩阵运算中最基本且最重要的运算之一。在进行矩阵乘法时，要求第一个矩阵的列数（column）和第二个矩阵的行数（row）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="矩阵快速幂test版">
 <meta property="og:url" content="http://example.com/2024/11/08/%E7%9F%A9%E9%98%B5%E5%BF%AB%E9%80%9F%E5%B9%82/index.html">
 <meta property="og:site_name" content="jessiexichen的小窝">
-<meta property="og:description" content="矩阵快速幂是一种基于矩阵的快速幂算法。与普通的快速幂算法类似，它利用分治法对矩阵进行快速乘法运算，从而在对矩阵进行幂运算时减少计算量。矩阵快速幂的核心思想是通过反复平方来加速矩阵的幂计算，特别适用于需要计算矩阵高次幂的场景。 矩阵乘法矩阵乘法是矩阵运算中最基本且最重要的运算之一。在进行矩阵乘法时，要求第一个矩阵的列数（column）和第二个矩阵的行数（row）相同。 假设矩阵 ( A ) 为 (">
+<meta property="og:description" content="\[ E&#x3D;mc^2 \] 矩阵快速幂是一种基于矩阵的快速幂算法。与普通的快速幂算法类似，它利用分治法对矩阵进行快速乘法运算，从而在对矩阵进行幂运算时减少计算量。矩阵快速幂的核心思想是通过反复平方来加速矩阵的幂计算，特别适用于需要计算矩阵高次幂的场景。 矩阵乘法 矩阵乘法是矩阵运算中最基本且最重要的运算之一。在进行矩阵乘法时，要求第一个矩阵的列数（column）和第二个矩阵的行数（row）">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-11-07T16:04:43.000Z">
-<meta property="article:modified_time" content="2025-01-01T16:06:01.784Z">
+<meta property="article:modified_time" content="2025-01-02T02:09:38.199Z">
 <meta property="article:tag" content="oi">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -234,7 +234,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          779 字
+          765 字
         
       </span>
     
@@ -287,66 +287,61 @@
             
               <div class="markdown-body">
                 
-                <p>矩阵快速幂是一种基于矩阵的快速幂算法。与普通的快速幂算法类似，它利用分治法对矩阵进行快速乘法运算，从而在对矩阵进行幂运算时减少计算量。矩阵快速幂的核心思想是通过反复平方来加速矩阵的幂计算，特别适用于需要计算矩阵高次幂的场景。</p>
-<h2 id="矩阵乘法"><a href="#矩阵乘法" class="headerlink" title="矩阵乘法"></a>矩阵乘法</h2><p>矩阵乘法是矩阵运算中最基本且最重要的运算之一。在进行矩阵乘法时，要求第一个矩阵的列数（column）和第二个矩阵的行数（row）相同。</p>
-<p>假设矩阵 ( A ) 为 ( m \times p ) 的矩阵，矩阵 ( B ) 为 ( p \times n ) 的矩阵，那么它们的乘积矩阵 ( C ) 为 ( m \times n ) 的矩阵，其中矩阵 ( C ) 的每个元素 ( C_{ij} ) 是矩阵 ( A ) 的第 ( i ) 行和矩阵 ( B ) 的第 ( j ) 列的点积。具体公式如下：</p>
-<p>[<br>C_{ij} &#x3D; \sum_{k&#x3D;1}^{p} A_{ik} \cdot B_{kj}<br>]</p>
-<p>这意味着要计算矩阵 ( C ) 中的元素 ( C_{ij} )，需要枚举矩阵 ( A ) 的行和矩阵 ( B ) 的列。为了确保矩阵乘法合法，必须满足矩阵 ( A ) 的列数等于矩阵 ( B ) 的行数。</p>
-<h2 id="矩阵快速幂算法"><a href="#矩阵快速幂算法" class="headerlink" title="矩阵快速幂算法"></a>矩阵快速幂算法</h2><p>矩阵快速幂的思想与普通快速幂相似，即利用分治法将幂次拆分为小的部分进行计算。在矩阵快速幂中，我们对矩阵进行连续平方，从而减少乘法次数，快速得到矩阵的高次幂。</p>
+                <p><span class="math display">\[
+E=mc^2
+\]</span>
+矩阵快速幂是一种基于矩阵的快速幂算法。与普通的快速幂算法类似，它利用分治法对矩阵进行快速乘法运算，从而在对矩阵进行幂运算时减少计算量。矩阵快速幂的核心思想是通过反复平方来加速矩阵的幂计算，特别适用于需要计算矩阵高次幂的场景。</p>
+<h2 id="矩阵乘法">矩阵乘法</h2>
+<p>矩阵乘法是矩阵运算中最基本且最重要的运算之一。在进行矩阵乘法时，要求第一个矩阵的列数（column）和第二个矩阵的行数（row）相同。</p>
+<p>假设矩阵 ( A ) 为 ( m p ) 的矩阵，矩阵 ( B ) 为 ( p n )
+的矩阵，那么它们的乘积矩阵 ( C ) 为 ( m n ) 的矩阵，其中矩阵 ( C )
+的每个元素 ( C_{ij} ) 是矩阵 ( A ) 的第 ( i ) 行和矩阵 ( B ) 的第 ( j )
+列的点积。具体公式如下：</p>
+<p>[ C_{ij} = <em>{k=1}^{p} A</em>{ik} B_{kj} ]</p>
+<p>这意味着要计算矩阵 ( C ) 中的元素 ( C_{ij} )，需要枚举矩阵 ( A )
+的行和矩阵 ( B ) 的列。为了确保矩阵乘法合法，必须满足矩阵 ( A )
+的列数等于矩阵 ( B ) 的行数。</p>
+<h2 id="矩阵快速幂算法">矩阵快速幂算法</h2>
+<p>矩阵快速幂的思想与普通快速幂相似，即利用分治法将幂次拆分为小的部分进行计算。在矩阵快速幂中，我们对矩阵进行连续平方，从而减少乘法次数，快速得到矩阵的高次幂。</p>
 <p>矩阵快速幂的算法流程可以分为以下几个步骤：</p>
-<ol>
-<li><p><strong>初始化矩阵</strong>：<br>创建一个单位矩阵 <code>res</code>，这是因为任何矩阵与单位矩阵相乘，都会得到原矩阵。</p>
-</li>
-<li><p><strong>循环迭代</strong>：<br>对矩阵 ( a ) 进行快速幂计算，逐次平方矩阵并乘以当前的 <code>res</code>，直到幂指数为零。</p>
-</li>
-<li><p><strong>奇偶判断</strong>：<br>每次计算时，判断当前幂指数是奇数还是偶数。如果是奇数，先将当前矩阵乘到 <code>res</code> 上，然后将矩阵平方；如果是偶数，直接将矩阵平方。</p>
-</li>
+<ol type="1">
+<li><p><strong>初始化矩阵</strong>： 创建一个单位矩阵
+<code>res</code>，这是因为任何矩阵与单位矩阵相乘，都会得到原矩阵。</p></li>
+<li><p><strong>循环迭代</strong>： 对矩阵 ( a )
+进行快速幂计算，逐次平方矩阵并乘以当前的
+<code>res</code>，直到幂指数为零。</p></li>
+<li><p><strong>奇偶判断</strong>：
+每次计算时，判断当前幂指数是奇数还是偶数。如果是奇数，先将当前矩阵乘到
+<code>res</code>
+上，然后将矩阵平方；如果是偶数，直接将矩阵平方。</p></li>
 </ol>
 <p>以下是矩阵快速幂的代码实现：</p>
-<pre><code class="cpp">// 定义矩阵结构体
-struct Matrix &#123;
-    int mat[MAX][MAX];  // 矩阵的元素
-    int m, n;           // 矩阵的行数和列数
-&#125;;
-
-// 矩阵乘法运算符重载
-Matrix operator*(const Matrix&amp; a, const Matrix&amp; b) &#123;
-    Matrix c;
-    // 初始化结果矩阵c
-    for (int i = 0; i &lt; a.m; i++) &#123;
-        for (int j = 0; j &lt; b.n; j++) &#123;
-            c.mat[i][j] = 0;
-            for (int k = 0; k &lt; a.n; k++) &#123;
-                c.mat[i][j] = (c.mat[i][j] + a.mat[i][k] * b.mat[k][j]) % mod;
-            &#125;
-        &#125;
+<p>```cpp // 定义矩阵结构体 struct Matrix { int mat[MAX][MAX]; //
+矩阵的元素 int m, n; // 矩阵的行数和列数 };</p>
+<p>// 矩阵乘法运算符重载 Matrix operator<em>(const Matrix&amp; a, const
+Matrix&amp; b) { Matrix c; // 初始化结果矩阵c for (int i = 0; i &lt;
+a.m; i++) { for (int j = 0; j &lt; b.n; j++) { c.mat[i][j] = 0; for (int
+k = 0; k &lt; a.n; k++) { c.mat[i][j] = (c.mat[i][j] + a.mat[i][k] </em>
+b.mat[k][j]) % mod; } } } return c; // 返回乘积矩阵 }</p>
+<p>// 矩阵快速幂运算符重载 Matrix operator^(Matrix a, long long b) {
+Matrix res, tmp; tmp = a; // tmp初始为a</p>
+<pre><code class="hljs">// 初始化单位矩阵res
+for (int i = 0; i &lt; a.m; i++) &#123;
+    for (int j = 0; j &lt; a.m; j++) &#123;
+        if (i == j) res.mat[i][j] = 1; // 单位矩阵
+        else res.mat[i][j] = 0;
     &#125;
-    return c; // 返回乘积矩阵
 &#125;
 
-// 矩阵快速幂运算符重载
-Matrix operator^(Matrix a, long long b) &#123;
-    Matrix res, tmp;
-    tmp = a;  // tmp初始为a
-
-    // 初始化单位矩阵res
-    for (int i = 0; i &lt; a.m; i++) &#123;
-        for (int j = 0; j &lt; a.m; j++) &#123;
-            if (i == j) res.mat[i][j] = 1; // 单位矩阵
-            else res.mat[i][j] = 0;
-        &#125;
-    &#125;
-
-    // 快速幂计算
-    while (b &gt; 0) &#123;
-        if (b &amp; 1) res = res * tmp; // 如果当前位为1，乘上当前矩阵
-        tmp = tmp * tmp; // tmp平方
-        b /= 2; // 右移一位
-    &#125;
-
-    return res; // 返回矩阵的最终结果
+// 快速幂计算
+while (b &gt; 0) &#123;
+    if (b &amp; 1) res = res * tmp; // 如果当前位为1，乘上当前矩阵
+    tmp = tmp * tmp; // tmp平方
+    b /= 2; // 右移一位
 &#125;
-</code></pre>
+
+return res; // 返回矩阵的最终结果</code></pre>
+<p>}</p>
 
                 
               </div>
